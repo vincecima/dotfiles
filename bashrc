@@ -1,6 +1,6 @@
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-export PATH=$PATH:/usr/local/go/bin
+export PATH="$HOME/.go/bin:$PATH"
 
 source ~/.nvm/nvm.sh
