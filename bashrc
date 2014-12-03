@@ -1,7 +1,8 @@
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+if [ -d ~/.rbenv ]; then
+  export PATH="$HOME/.rbenv/bin:$PATH"
+  eval "$(rbenv init -)"
+fi
 
-export GOROOT=$HOME/.go
-export PATH=$GOROOT/bin:$PATH
-
-source ~/.nvm/nvm.sh
+if [ -d ~/.nvm ]; then
+  source ~/.nvm/nvm.sh
+fi
