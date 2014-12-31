@@ -1,8 +1,8 @@
-if [ -d ~/.rbenv ]; then
+if [[ -d ~/.rbenv ]]; then
   export PATH="$HOME/.rbenv/bin:$PATH"
   eval "$(rbenv init -)"
 fi
 
-if [ -d ~/.nvm ]; then
+if [[ -d ~/.nvm ]]; then
   source ~/.nvm/nvm.sh
 fi
