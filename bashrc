@@ -6,3 +6,7 @@ fi
 if [[ -d ~/.nvm ]]; then
   source ~/.nvm/nvm.sh
 fi
+
+if [[ -d ~/bin ]]; then
+  export PATH="$HOME/bin:$PATH"
+fi
