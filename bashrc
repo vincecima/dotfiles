@@ -10,3 +10,7 @@ fi
 if [[ -d ~/bin ]]; then
   export PATH="$HOME/bin:$PATH"
 fi
+
+if [[ -f ~/Dropbox/Wiki/ledger.dat ]]; then
+  export LEDGER_FILE="$HOME/Dropbox/Wiki/ledger.dat"
+fi
