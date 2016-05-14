@@ -1,3 +1,7 @@
 [user]
 	name = Vince Cima
 	email = contact@vincecima.com
+[alias]
+	branches = branch -a
+	tags = tag
+	stashes = stash list
