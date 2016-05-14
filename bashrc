@@ -49,6 +49,11 @@ if [[ -d ~/.nvm ]]; then
   source ~/.nvm/nvm.sh
 fi
 
+if [[ -d ~/.tmuxifier ]]; then
+  export PATH="$HOME/.tmuxifier/bin:$PATH"
+  eval "$(tmuxifier init -)"
+fi
+
 if [[ -d ~/bin ]]; then
   export PATH="$HOME/bin:$PATH"
 fi
