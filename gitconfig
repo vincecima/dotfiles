@@ -5,3 +5,5 @@
 	branches = branch -a
 	tags = tag
 	stashes = stash list
+[core]
+	excludesfile = /Users/vincecima/.gitignore_global
