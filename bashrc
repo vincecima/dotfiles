@@ -46,7 +46,8 @@ if [[ -d ~/.rbenv ]]; then
 fi
 
 if [[ -d ~/.nvm ]]; then
-  source ~/.nvm/nvm.sh
+  export NVM_DIR="$HOME/.nvm"
+  . "$(brew --prefix nvm)/nvm.sh"
 fi
 
 if [[ -d ~/.tmuxifier ]]; then
