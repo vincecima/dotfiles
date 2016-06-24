@@ -7,3 +7,5 @@
 	stashes = stash list
 [core]
 	excludesfile = /Users/vincecima/.gitignore_global
+[diff]
+	compactionHeuristic = true
