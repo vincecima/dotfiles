@@ -1,0 +1,4 @@
+if [[ -d ~/.tmuxifier ]]; then
+  export PATH="$HOME/.tmuxifier/bin:$PATH"
+  eval "$(tmuxifier init -)"
+fi

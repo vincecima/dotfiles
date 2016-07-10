@@ -40,19 +40,9 @@ bind '"\e[B": history-search-forward'
 bind '"\e[C": forward-char'
 bind '"\e[D": backward-char'
 
-if [[ -d ~/.rbenv ]]; then
-  export PATH="$HOME/.rbenv/bin:$PATH"
-  eval "$(rbenv init -)"
-fi
-
-if [[ -d ~/.nvm ]]; then
-  export NVM_DIR="$HOME/.nvm"
-  . "$(brew --prefix nvm)/nvm.sh"
-fi
-
-if [[ -d ~/.tmuxifier ]]; then
-  export PATH="$HOME/.tmuxifier/bin:$PATH"
-  eval "$(tmuxifier init -)"
+# Aliases
+if type git > /dev/null; then
+  alias g='git'
 fi
 
 if [[ -d ~/bin ]]; then
@@ -63,6 +53,6 @@ if [[ -f ~/Dropbox/Wiki/ledger.dat ]]; then
   export LEDGER_FILE="$HOME/Dropbox/Wiki/ledger.dat"
 fi
 
-if type git > /dev/null; then
-  alias g='git'
+if [[ -f ~/.paths ]]; then
+  source ~/.paths
 fi

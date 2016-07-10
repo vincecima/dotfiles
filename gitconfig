@@ -6,6 +6,6 @@
 	tags = tag
 	stashes = stash list
 [core]
-	excludesfile = /Users/vincecima/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [diff]
 	compactionHeuristic = true
