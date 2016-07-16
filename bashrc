@@ -45,6 +45,10 @@ if type git > /dev/null; then
   alias g='git'
 fi
 
+if type atom > /dev/null; then
+  alias atm='atom -a'
+fi
+
 if [[ -d ~/bin ]]; then
   export PATH="$HOME/bin:$PATH"
 fi
