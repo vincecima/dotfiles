@@ -9,3 +9,6 @@
 	excludesfile = ~/.gitignore_global
 [diff]
 	compactionHeuristic = true
+[color "diff"]
+	old = red strike
+	new = green italic
