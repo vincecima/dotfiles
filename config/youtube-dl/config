@@ -1,0 +1,3 @@
+-o '%(uploader)s - %(title)s.%(ext)s'
+
+-f best
