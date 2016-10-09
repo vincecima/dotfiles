@@ -57,10 +57,6 @@ if [[ -f ~/Dropbox/Wiki/ledger.dat ]]; then
   export LEDGER_FILE="$HOME/Dropbox/Wiki/ledger.dat"
 fi
 
-if type docker-machine > /dev/null; then
-  eval $(docker-machine env)
-fi
-
 if [[ -f ~/.paths ]]; then
   source ~/.paths
 fi

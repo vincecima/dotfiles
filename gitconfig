@@ -10,5 +10,5 @@
 [diff]
 	compactionHeuristic = true
 [color "diff"]
-	old = red strike
-	new = green italic
+	old = red
+	new = green

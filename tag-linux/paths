@@ -2,3 +2,8 @@ if [[ -d ~/.tmuxifier ]]; then
   export PATH="$HOME/.tmuxifier/bin:$PATH"
   eval "$(tmuxifier init -)"
 fi
+
+if [[ -d ~/.nvm ]]; then
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+fi
