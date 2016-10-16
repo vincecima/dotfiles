@@ -1,8 +1,0 @@
-workstation:
-  root: "~"
-  launch_strategy: in_place
-  layout:
-  -
-    - watch -t hledger networth
-  -
-    - hledger add
